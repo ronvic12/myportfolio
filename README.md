@@ -1,3 +1,103 @@
+# Creating Portfolio using NextJS, React and NodeJS for API
+
+
+
+## Usage of Shadcn/UI for lightweight compatability of the components(meaning only install necessary components for the website)
+
+https://ui.shadcn.com/docs/installation/next
+ 
+
+Components needed:
+- Button
+- Scroll Area 
+- Input
+- Select 
+- ToolTip 
+ npx shadcn@latest add input button scroll-area select tooltip
+
+For Framer motion(Animation):
+npm i framer-motion
+
+## Usage of Client Components for navigation
+```jsx
+"use client"
+import { usePathname } from "next/navigation";
+```
+
+📌 Layout Structure:
+Header (Sticky)
+Your name & title (e.g., Ronvic Ernest Cuevas – Web Developer)
+
+A clean navigation bar with: Home | Resume | My Projects| Contact
+
+
+📄 Resume Page Sections:
+1. Introduction (Hero Section)
+Your photo/avatar on one side, and a short bio on the other.
+
+"I'm a passionate Web Developer specializing in full-stack development, problem-solving, and database optimization."
+
+Call-to-action: [Download Résumé] button.
+
+
+
+
+
+
+📄 Resume Page Sections:
+1. Introduction (Hero Section)
+Your photo/avatar on one side, and a short bio on the other.
+
+"I'm a passionate Web Developer specializing in full-stack development, problem-solving, and database optimization."
+
+Call-to-action: [Download Résumé] button.
+
+2. Skills
+Display as categories (Frontend, Backend, Database, Tools).
+
+Use icons or badges (HTML, CSS, JavaScript, Node.js, MySQL, AWS, etc.).
+
+Could be a horizontal scrollable list or grid format.
+
+3. Experience
+(List work experience in reverse chronological order.)
+
+Company | Job Title | Dates
+
+Bullet points highlighting key contributions:
+
+Maintained and developed web applications at Anderson Continuing Education.
+
+Migrated MySQL database to AWS RDS, reducing downtime.
+
+Fixed email authentication issues by modifying SPF records.
+
+Use bold or italics to highlight achievements (e.g., increased user retention by 30%).
+
+
+4. Education & Certifications
+Degree & University | Year
+
+Certifications (JavaScript, Node.js, etc.)
+
+
+
+
+Projects
+Title | Tech Stack | Demo/GitHub Links
+
+Short descriptions with key challenges & solutions.
+
+Can be a carousel or grid layout.
+
+Contact Section
+Email | LinkedIn | GitHub | Portfolio URL
+
+Optional contact form for inquiries.
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
