@@ -1,5 +1,6 @@
 "use client";
 import CountUp from "react-countup";
+import { certifications } from '../data/resume';
 
 const stats =[
     {
@@ -11,7 +12,7 @@ const stats =[
         text: "Projects completed"
     },
     {
-        num:3,
+        num:certifications.cert_items.length,
         text: "Certfications Earned"
     }
 ]

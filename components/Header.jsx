@@ -20,7 +20,7 @@ import MobileNav from "./MobileNav";
         <div className="hidden xl:flex items-center gap-8">
         <Nav/>
             <Link href="/contact">
-                <Button>Chat with Me</Button>
+                <Button>Hire Me</Button>
             </Link>
         </div>
         {/* Mobile Nav */}
