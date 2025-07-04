@@ -19,9 +19,9 @@ import MobileNav from "./MobileNav";
 
         <div className="hidden xl:flex items-center gap-8">
         <Nav/>
-            <Link href="/contact">
-                <Button>Hire Me</Button>
-            </Link>
+       <a href="mailto:ronviccuevas@gmail.com">
+    <Button>Hire Me</Button>
+</a>
         </div>
         {/* Mobile Nav */}
         <div className="xl:hidden">

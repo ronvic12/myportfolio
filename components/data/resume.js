@@ -146,4 +146,37 @@ export const experience = {
 };
 
 
+export const projects = [
+    {
+        num:'01',
+        category:"front-end",
+        title:"AI Chatbot 🤖",
+        description:"A smart and responsive AI chatbot assistant built with the React framework, powered by OpenAI's ChatGPT-4 Mini for seamless conversational interactions.",
+        stack:[{name: "React"},{name:"Vite"},{name:"OpenAI GPT-4 API"},{name:"Tailwind CSS"}],
+        image:'/assets/projects/chatbot.jpg',
+        live:"https://chat-gpt-4-mini-assistant.vercel.app/",
+        github:"https://github.com/ronvic12/ChatGPT4Mini-Assistant"
+    },
+     {
+        num:'02',
+        category:"Web Development",
+        title:"Food Donations Made Easy",
+        description:"A web-based platform to facilitate food donations within the local community. The system allows donors to submit available food items and enables individuals in need to browse, request, and track donations in real time.",
+        stack:[{name: "C#"},{name:"ASP.NET Web Forms"},{name:"MySQL"}],
+        image:'/assets/projects/food.jpg',
+        live:"",
+        github:"https://github.com/ronvic12/Food_Donor_Management_System"
+    },
+     {
+        num:'03',
+        category:"game-development",
+        title:"Earth Defender",
+        description:"An adventurous and action 2D Shooter Game, where the Earth is invaded by Aliens. As a ranger in space, your duty is to fight through the galaxy and defeat all aliens to make the Earth feel safe again",
+        stack:[{name: "C#"},{name:"Unity Engine"},{name:"WebGL"}],
+        image:'/assets/projects/space_game.png',
+        live:"https://coderedac30.itch.io/earth-defender",
+        github:"https://github.com/ronvic12/2D-Shooter?tab=readme-ov-file"
+    }
+]
+
 
