@@ -30,6 +30,11 @@ const Photo = () => {
     viewBox="0 0 506 506"
     xmlns="http://www.w3.org/2000/svg"
     fill="transparent"
+    initial={{ opacity: 0 }} // 👈 Initially hidden'
+    animate={{ 
+    opacity: 1,
+    transition: { delay: 2, duration: 0.4, ease: "easeInOut" } // 👈 Match delay to after stair effect
+  }}
   >
     <motion.circle 
       cx="253" 
@@ -47,7 +52,8 @@ const Photo = () => {
       transition={{
         duration: 20,
         repeat: Infinity,
-        repeatType: "reverse"
+        repeatType: "reverse",
+        delay:1.4
       }}
     />
   </motion.svg>

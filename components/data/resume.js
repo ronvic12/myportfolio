@@ -1,6 +1,14 @@
 export const about = {
   title:'About me',
-  description: "",
+  description: `
+  I’m a full-stack developer with over 3 years of experience building and maintaining scalable web applications and database-driven systems. 
+  I specialize in technologies like C#, ASP.NET, JavaScript (React, Node.js), MySQL, and Shopify—delivering solutions that improve user experience, system reliability, and business efficiency.
+
+  I’ve developed CMS platforms, healthcare certification systems, and internal tools for automating tasks like inventory tracking and database backups. My work has helped reduce support requests, eliminate service downtime, and streamline operations across teams.
+
+  I’m continuously refining my skills—especially in front-end and back-end development—and exploring how emerging technologies like AI (OpenAI's GPT-4) can enhance user interaction. While I’ve worked with services like AWS for database hosting and integrations, I’m currently focused on sharpening my full-stack capabilities and learning through hands-on projects.
+
+  Let’s build impactful and efficient solutions together.`,
   info:[
     {
       fieldName: "Name",
@@ -21,8 +29,9 @@ export const about = {
     {
       fieldName: "Language",
       fieldValue: "English"
-    },
-  ]
+    }
+  ],
+  image:'/assets/photo1.jpg'
 };
 
 export const certifications = {
