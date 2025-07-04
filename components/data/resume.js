@@ -5,21 +5,8 @@ export const about = {
      I specialize in technologies like C#, ASP.NET, JavaScript (React, Node.js), MySQL, and Shopify—delivering solutions that improve user experience, system reliability, and business efficiency.`,
     `I’ve developed CMS platforms, healthcare certification systems, and internal tools for automating tasks like inventory tracking and database backups. My work has helped reduce support requests, eliminate service downtime, and streamline operations across teams.`,
     `I’m continuously refining my skills—especially in front-end and back-end development—and exploring how emerging technologies like AI (OpenAI's GPT-4) can enhance user interaction. While I’ve worked with services like AWS for database hosting and integrations, I’m currently focused on sharpening my full-stack capabilities and learning through hands-on projects.`,
+    `When I’m not coding, you’ll probably find me on the golf driving range, playing a basketball game, or diving into a good video game. I believe a balanced life fuels creativity—and great code.`,
     `Let’s build impactful and efficient solutions together.`
-  ],
-  info:[
-    {
-      fieldName: "Location",
-      fieldValue: "Woodland, California"
-    },
-    {
-      fieldName: "Experience",
-      fieldValue: "3+"
-    },
-    {
-      fieldName: "Language",
-      fieldValue: "English"
-    }
   ],
   images:[
     '/assets/photo1.jpg',
@@ -203,6 +190,26 @@ export const projects = [
         image:'/assets/projects/space_game.png',
         live:"https://coderedac30.itch.io/earth-defender",
         github:"https://github.com/ronvic12/2D-Shooter?tab=readme-ov-file"
+    },
+     {
+        num:'04',
+        category:"game-development",
+        title:"KnightQuest",
+        description:"A 2D platform gameplay with simple sword combat mechanics. The goal of the game is traverse various obstacles and enemies in order to save the royal family. Worked with 5 people, contributed by implementing User Interface, Map Level Design and Narrative Design.",
+        stack:[{name: "C#"},{name:"Unity Engine"},{name:"WebGL"}],
+        image:'/assets/projects/knightquest.png',
+        live:"https://breliu-dv.github.io/KnightQuest/",
+        github:"https://github.com/breliu-dv/KnightQuest"
+    },
+    {
+        num:'05',
+        category:"Artificial Intelligence",
+        title:"Connect 4 AI",
+        description:"Developed two AI agents—MinimaxAI and AlphaBetaAI—to explore and implement fundamental decision-making algorithms used in two-player adversarial games. Focused on understanding game tree evaluation, optimal move selection, and performance optimization through alpha-beta pruning.",
+        stack:[{name: "Python"}],
+        image:'/assets/projects/connect.png',
+        live:"",
+        github:"https://github.com/ronvic12/Connect4-ai-v2.0"
     }
 ]
 

@@ -69,7 +69,7 @@ const Projects = () => {
                       <Link href={project.live}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-[70px] h-[70px] rounded-full 
+                            <TooltipTrigger className="group w-[70px] h-[70px] rounded-full 
                             bg-white/5 flex justify-center items-center">
                               <BsArrowUpRight className="text-white text-3xl group-hover:text-[var(--textaccent)]" />
                             </TooltipTrigger>
@@ -86,7 +86,7 @@ const Projects = () => {
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full 
+                      <TooltipTrigger className="group w-[70px] h-[70px] rounded-full 
                       bg-white/5 flex justify-center items-center">
                         <BsGithub className="text-white text-3xl group-hover:text-[var(--textaccent)]" />
                       </TooltipTrigger>
