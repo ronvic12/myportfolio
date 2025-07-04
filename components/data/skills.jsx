@@ -6,8 +6,8 @@ import { PiTerminalWindowFill } from "react-icons/pi";
 import { TbBrandVscode } from "react-icons/tb";
 
 export const skills = {
-  title:"My Skills",
-  description:"",
+  title:"Technical Skills",
+  description:"Technologies I’ve applied in professional settings and explored deeply through hands-on personal projects to strengthen my development skills.",
   skill_list:[
     {
       category: "Programming Languages",

@@ -1,42 +1,35 @@
 export const about = {
   title:'About me',
-  description: `
-  I’m a full-stack developer with over 3 years of experience building and maintaining scalable web applications and database-driven systems. 
-  I specialize in technologies like C#, ASP.NET, JavaScript (React, Node.js), MySQL, and Shopify—delivering solutions that improve user experience, system reliability, and business efficiency.
-
-  I’ve developed CMS platforms, healthcare certification systems, and internal tools for automating tasks like inventory tracking and database backups. My work has helped reduce support requests, eliminate service downtime, and streamline operations across teams.
-
-  I’m continuously refining my skills—especially in front-end and back-end development—and exploring how emerging technologies like AI (OpenAI's GPT-4) can enhance user interaction. While I’ve worked with services like AWS for database hosting and integrations, I’m currently focused on sharpening my full-stack capabilities and learning through hands-on projects.
-
-  Let’s build impactful and efficient solutions together.`,
+  description: [
+    `I’m a full-stack developer with over 3 years of experience building and maintaining scalable web applications and database-driven systems. 
+     I specialize in technologies like C#, ASP.NET, JavaScript (React, Node.js), MySQL, and Shopify—delivering solutions that improve user experience, system reliability, and business efficiency.`,
+    `I’ve developed CMS platforms, healthcare certification systems, and internal tools for automating tasks like inventory tracking and database backups. My work has helped reduce support requests, eliminate service downtime, and streamline operations across teams.`,
+    `I’m continuously refining my skills—especially in front-end and back-end development—and exploring how emerging technologies like AI (OpenAI's GPT-4) can enhance user interaction. While I’ve worked with services like AWS for database hosting and integrations, I’m currently focused on sharpening my full-stack capabilities and learning through hands-on projects.`,
+    `Let’s build impactful and efficient solutions together.`
+  ],
   info:[
     {
-      fieldName: "Name",
-      fieldValue: "Ronvic Cuevas"
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "ronviccuevas@gmail.com"
+      fieldName: "Location",
+      fieldValue: "Woodland, California"
     },
     {
       fieldName: "Experience",
       fieldValue: "3+"
     },
     {
-      fieldName: "Phone",
-      fieldValue: "(916)768-3004"
-    },
-    {
       fieldName: "Language",
       fieldValue: "English"
     }
   ],
-  image:'/assets/photo1.jpg'
+  images:[
+    '/assets/photo1.jpg',
+    '/assets/photo2.jpg'
+  ]
 };
 
 export const certifications = {
-  title:'My Certfications',
-  description:"",
+  title:'Certfications',
+  description:"A collection of certifications that reflect my commitment to continuous learning in tech.",
   cert_items:[
     {
      provider:"Codecademy",
@@ -85,7 +78,7 @@ export const certifications = {
 
 export const education = {
   title:'My Education',
-  description:"Here is my education journey",
+  description:"Education Timeline",
    education_items:[
     {
      institution:"UC Davis",
@@ -104,17 +97,42 @@ export const education = {
 
 
 export const experience = {
-  title:'My Experience',
-  description:"Here are my professional work experience",
+  title:'Professional Experience',
+  description:"My Career Journey",
    job_experiences:[
     {
      company:"BZAM LLC",
      position: "Shopify Web Developer",
      duration: "January 2025 - Present",
-     responsibilities:"Developed and customized playstreetgolf.com on Shopify by editing theme files and Liquid templates to create custom sections, embed unique content, and implement on-page SEO techniques to boost product visibility and drive sales.",
-     impactPoints: [
-        "Built and designed streetgolf.org on Hostinger using pre-built templates, optimizing content with SEO best practices to educate users about street golf and generate backlink traffic to the main Shopify store.",
-        "Focused on enhancing user experience and increasing brand awareness to support e-commerce sales growth."
+     responsibilities: (
+        <>
+          Developed and customized{' '}
+          <a
+            href="https://playstreetgolf.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-[var(--textaccent)]"
+          >
+            playstreetgolf.com
+          </a>{' '}
+          on Shopify by editing theme files and Liquid templates to create custom sections, embed unique content, and implement on-page SEO techniques to boost product visibility and drive sales.
+        </>
+      ), 
+
+    impactPoints: [
+      <>
+      Built and designed{' '}
+      <a
+        href="https://streetgolf.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline text-[var(--textaccent)]"
+      >
+        streetgolf.org
+      </a>{' '}
+      on Hostinger using pre-built templates, optimizing content with SEO best practices to educate users about street golf and generate backlink traffic to the main Shopify store.
+    </>,
+      "Focused on enhancing user experience and increasing brand awareness to support e-commerce sales growth."
       ]
     },
     {

@@ -6,7 +6,7 @@ import {Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip,TooltipContent,TooltipProvider,TooltipTrigger } from "@radix-ui/react-tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
-
+import Linkify from 'react-linkify';
 
 const Resume = () => {
    const [selectedJob, setSelectedJob] = useState(null);
@@ -52,7 +52,7 @@ const Resume = () => {
                   {experience.job_experiences.map((item,index)=>{
                     return(
                       <li key={index} className="bg-[#232329] h-[184px] py-6 px-10
-                      flex flex-col justify-center items-center lg:items-start gap-1 cursor-pointer"
+                      flex flex-col justify-center items-center lg:items-start gap-1 cursor-pointer hover:underline text-white"
                        onClick={() => openModal(item)}
                        >
                         <span className="text-[var(--textaccent)]">{item.duration}</span>
@@ -76,7 +76,7 @@ const Resume = () => {
              {/* Modal */}
             {selectedJob && (
               <div
-                className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
+                className="fixed inset-0 bg-black/90  flex justify-center items-center z-50"
                 onClick={closeModal}
               >
                 <div
@@ -95,7 +95,10 @@ const Resume = () => {
                   <p className="mb-4">{selectedJob.duration}</p>
                   {/* Responsibility fallback */}
                     <p className="mb-4 text-white/90">
-                      {selectedJob.responsibilities || "Main responsibility not available."}
+                     <Linkify>
+                    {selectedJob.responsibilities || "Main responsibility not available."}
+                    </Linkify>
+                    
                     </p>
 
                     {/* Impact points fallback */}
@@ -242,7 +245,27 @@ const Resume = () => {
              <TabsContent value="about" className="w-full text-center xl:text-left">
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+
+                      {/* Multiple Images */}
+                    <div className="flex flex-wrap justify-center xl:justify-start gap-4">
+                      {about.images.map((imgSrc, index) => (
+                        <div
+                          key={index}
+                          className="w-[400px] h-[400px] rounded-xl overflow-hidden"
+                        >
+                          <img
+                            src={imgSrc}
+                            alt={`About image ${index + 1}`}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                <div className="max-w-[900px] text-white/60 mx-auto xl:mx-0 space-y-4">
+                  {about.description.map((para, index) => (
+                    <p key={index}>{para}</p>
+                  ))}
+                </div>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((item,index)=>{
                     return <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
