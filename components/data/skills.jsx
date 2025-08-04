@@ -1,5 +1,5 @@
 import { BiLogoVisualStudio } from "react-icons/bi";
-import { FaHtml5,FaCss3Alt,FaReact,FaNodeJs,FaPython,FaWindows,FaGitAlt,FaLinux} from "react-icons/fa";
+import { FaHtml5,FaCss3Alt,FaReact,FaNodeJs,FaPython,FaWindows,FaGitAlt,FaLinux, FaJava} from "react-icons/fa";
 import { SiMysql,SiAmazonrds,SiCodeberg,SiSqlite, SiDotnet, SiJavascript, SiShopify, SiNextdotjs, SiVercel, SiJquery, SiBootstrap, SiExpress, SiJson, SiGithub, SiTailwindcss } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 import { PiTerminalWindowFill } from "react-icons/pi";
@@ -15,6 +15,7 @@ export const skills = {
         { name: "C#", icon: <TbBrandCSharp className="text-purple-600" /> },
         { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
         { name: "Python", icon: <FaPython className="text-blue-400" /> },
+        { name: "Java", icon: <FaJava className="text-[#E76F00]" /> },
       ],
     },
     {

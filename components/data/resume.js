@@ -20,6 +20,18 @@ export const certifications = {
   cert_items:[
     {
      provider:"Codecademy",
+     certificate: "Learn Java",
+     issueDate: "July 2025",
+     url:"https://www.codecademy.com/profiles/RonvicErnestCuevas/certificates/d3f89367b558583e361640f778191345"
+    },
+     {
+     provider:"Codecademy",
+     certificate: "Learn Python 3 Course",
+     issueDate: "July 2025",
+     url:"https://www.codecademy.com/profiles/RonvicErnestCuevas/certificates/6c152bd262967f8c941c9707ed636bda"
+    },
+    {
+     provider:"Codecademy",
      certificate: "Learn Testing for Web Development Course",
      issueDate: "June 2025",
      url:"https://www.codecademy.com/profiles/RonvicErnestCuevas/certificates/05ded7635e6bfe1d3d1f776db3f1fa32"
