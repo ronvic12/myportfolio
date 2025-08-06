@@ -138,7 +138,7 @@ export const experience = {
      company:"Anderson Continuation Education",
      position: "Web Developer",
      duration: "April 2023 - Present",
-     responsibilities:"Developed and maintained the company's healthcare certification website using C#, ASP.NET, and MySQL on a Linux VPS.",
+     responsibilities:"Enhanced and maintained a full-stack healthcare certification platform using C#, ASP.NET, and a MySQL database hosted on a dedicated Linux VPS.",
      impactPoints: [
         "Built and deployed a Quantity Tracking System enabling the online sale of used books for the first time, with automated stock updates and real-time UI changes — increased product visibility by 100% and eliminated stock-related support issues.",
         "Resolved recurring storage and uptime issues by migrating from GoDaddy shared hosting to a Linux VPS, eliminating bi-monthly outages and doubling system reliability.",
