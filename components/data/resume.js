@@ -101,7 +101,7 @@ export const experience = {
    job_experiences:[
     {
      company:"BZAM LLC",
-     position: "Shopify Web Developer",
+     position: "Digital Marketing & Web Design Specialist",
      duration: "January 2025 - Present",
      responsibilities: (
         <>
@@ -131,7 +131,8 @@ export const experience = {
       </a>{' '}
       on Hostinger using pre-built templates, optimizing content with SEO best practices to educate users about street golf and generate backlink traffic to the main Shopify store.
     </>,
-      "Focused on enhancing user experience and increasing brand awareness to support e-commerce sales growth."
+      "Focused on enhancing user experience and increasing brand awareness to support e-commerce sales growth.",
+      " Created and edited engaging video content for TikTok and YouTube Shorts to promote street golf, increasing brand reach and engagement; managed targeted Google Ads campaigns to drive traffic and boost e-commerce sales."
       ]
     },
     {
