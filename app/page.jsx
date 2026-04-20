@@ -10,8 +10,8 @@ const Home = () => {
     <>
       {/* Ahrefs Analytics Script */}
       <Script
-        src="https://analytics.ahrefs.com/analytics.js"
-        data-key="5rMm0tny781JSH7P+/ZD+w"
+        src="https://analytics.ahrefs.com/analytics.js",
+        data-key="5rMm0tny781JSH7P+/ZD+w",
         strategy="afterInteractive"
         async
       />
