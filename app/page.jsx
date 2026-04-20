@@ -1,3 +1,4 @@
+import Script from "next/script";  // Add this import
 import {Button} from "@/components/ui/button";
 import Socials from "@/components/ui/Socials";
 import Photo from "@/components/ui/Photo";
@@ -5,6 +6,14 @@ import Stats from "@/components/ui/Stats";
 import {FiDownload} from "react-icons/fi";
 const Home = () => {
   return (
+    {/* Ahrefs Analytics Script */}
+      <Script
+        src="https://analytics.ahrefs.com/analytics.js"
+        data-key="5rMm0tny781JSH7P+/ZD+w"
+        strategy="afterInteractive"
+        async
+      />
+          
     <section className="h-full">
       <div className='container mx-auto h-full'>
         <div className="flex flex-col xl:flex-row items-center justify-between 
