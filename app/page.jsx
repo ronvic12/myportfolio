@@ -1,4 +1,3 @@
-import Script from "next/script";
 import {Button} from "@/components/ui/button";
 import Socials from "@/components/ui/Socials";
 import Photo from "@/components/ui/Photo";
@@ -8,13 +7,6 @@ import {FiDownload} from "react-icons/fi";
 const Home = () => {
   return (
     <>
-      {/* Ahrefs Analytics Script */}
-      <Script
-        src="https://analytics.ahrefs.com/analytics.js",
-        data-key="5rMm0tny781JSH7P+/ZD+w",
-        strategy="afterInteractive"
-        async
-      />
 
       <section className="h-full">
         <div className='container mx-auto h-full'>
